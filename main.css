@@ -1,0 +1,189 @@
+/* styles.css */
+body {
+    font-family: 'DM Sans';
+}
+
+/* HAND WAVE */
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#waving-hand {
+    display: inline-block;
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+}
+
+/* HAND WAVE */
+
+/* CONVERT TO ARROW CIRCLE */
+.container {
+    transition: all 0.3s ease-in-out;
+}
+
+.circle {
+    width: 3rem;
+    /* Equivalent to 12 units (w-12) */
+    height: 3rem;
+    /* Equivalent to 12 units (h-12) */
+    transition: all 0.3s ease-in-out;
+}
+
+.circle .icon {
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    /* Initially hide the arrow */
+}
+
+.container:hover .circle {
+    width: 1.25rem;
+    /* Keep size consistent */
+    height: 1.25rem;
+    /* Keep size consistent */
+    border-radius: 100%;
+    /* Adjusted to show the arrow properly */
+    transform: rotate(45deg);
+    /* Rotate the square */
+    background-color: #19c16e;
+}
+
+.container:hover .circle .icon {
+    opacity: 1;
+    /* Show the arrow */
+}
+
+/* CONVERT TO ARROW CIRCLE */
+
+/* CONVERT EMAIL ME TO ARROW */
+.button-email {
+    position: relative;
+    overflow: hidden;
+}
+
+.button-email h3 {
+    transition: opacity 0.3s ease;
+}
+
+.button-email:hover h3 {
+    opacity: 0;
+}
+
+.button-email::after {
+    content: '📧';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-size: 1.25rem;
+    /* Adjust font size as needed */
+}
+
+.button-email:hover::after {
+    opacity: 1;
+}
+
+/* CONVERT EMAIL ME TO ARROW */
+
+/* Mobile Menu */
+.menu-open #mobile-menu {
+    max-height: 100vh;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-open #menu-icon {
+    display: none;
+}
+
+.menu-open #close-icon {
+    display: block;
+}
+
+.menu-open body {
+    overflow: hidden;
+}
+
+#mobile-menu {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#close-icon {
+    display: none;
+}
+
+/* Mobile Menu */
+
+/* Image Projects */
+.hover-up {
+    transform: translateY(50px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tomodoro:hover .hover-up {
+    transform: translateY(25px);
+}
+
+
+.genfit:hover .hover-scale {
+    transform: translate(200px, 30px) scale(1.2);
+}
+
+.jordan-redesign:hover .hover-scale {
+    transform: translate(200px, 30px) scale(1.2);
+}
+
+.hover-scale {
+    transform: translate(250px, 30px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Projects */
+
+/* OTHER USES */
+.trans {
+    transition: all 0.50s;
+}
+
+.trans-1 {
+    transition: border 0.25s;
+}
+
+/* OTHER USES */

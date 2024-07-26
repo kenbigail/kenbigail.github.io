@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LogoIcon -->
+    <link rel="shortcut icon" href="assets/Header.svg" \type="image/x-icon">
+
+    <!-- Selfmade Styles -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DM-SANS Font (Main Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Inter Font (Secondary Font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+    <title>About | Keenan Abigail</title>
+</head>
+
+<body class="bg-[#121212] overflow-x-hidden">
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed w-full h-auto py-0 md:py-5 bg-transparent z-50 transition-transform duration-300 ease-in-out">
+        <!-- Container Navbar -->
+        <div class="w-full flex flex-row md:w-[675px] h-auto py-4 md:py-2 md:mx-auto md:rounded-3xl bg-[#2E2E2E]">
+            <!-- Logo -->
+            <div class="logo-area w-1/2 px-4 flex flex-row justify-start items-center">
+                <div class="icon md:w-5 md:h-5 w-10 h-10 rounded-full">
+                    <img src="assets/header.png" alt="icon">
+                </div>
+            </div>
+            <!-- Navigations -->
+            <div class="navigations w-1/2 px-4 flex flex-row justify-end items-center">
+                <div class="hidden md:block">
+                    <div class=" flex items-baseline space-x-4">
+                        <a href="index.html"
+                            class="text-[#9f9f9f] text-opacity-[40%] hover:text-opacity-[100%] px-3 py-2 rounded-md text-sm font-medium">home</a>
+                        <a href="#" class="text-[#9f9f9f] px-3 py-2 rounded-md text-sm font-medium">about</a>
+                        <a href="#" id="nav-res"
+                            class="text-[#9f9f9f] text-opacity-[40%] hover:text-opacity-[100%] px-3 py-2 rounded-md text-sm font-medium">resume</a>
+                        <a href="#" id="nav-cal"
+                            class="text-[#968fff] text-opacity-[100%] hover:text-opacity-[80%] px-3 py-2 rounded-md text-sm font-semibold">reserve</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="focus:outline-none">
+                        <svg id="menu-icon" class="w-10 h-10" fill="none" stroke="#fff" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-10 h-10" fill="none" stroke="#fff" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Expand (mobile) -->
+    <div id="mobile-menu"
+        class="fixed left-0 w-full h-full bg-black text-white transition-all duration-300 ease-in-out z-40">
+        <div class="container pt-24 ps-9">
+            <!-- Navigations -->
+            <div class="navigations flex flex-col w-full h-auto space-y-5">
+                <div id="home" class="home w-full pt-3">
+                    <p class="font-semibold text-[#9f9f9f] text-4xl">home</p>
+                </div>
+                <div class="about w-full pt-3">
+                    <p class="font-semibold text-[#ffffff] text-4xl">about</p>
+                </div>
+                <div id="nav-res" class="resume w-full pt-3">
+                    <p class="font-semibold text-[#9f9f9f] text-4xl">resume</p>
+                </div>
+                <div id="nav-cal" class="reserve w-full pt-3">
+                    <p class="font-semibold text-[#968fff] text-4xl">reserve a call</p>
+                </div>
+                <!-- Bars -->
+                <div class="bar w-40 h-1 bg-[#9f9f9f] opacity-[30%]"></div>
+                <!-- Social medias -->
+                <div id="nav-insta" class="instagram w-full pt-[0.15rem]">
+                    <p class="font-medium text-[#9f9f9f] text-lg">Instagram</p>
+                </div>
+                <div id="nav-x" class="twitter w-full pt-[0.15rem]">
+                    <p class="font-medium text-[#9f9f9f] text-lg">Twitter</p>
+                </div>
+                <div id="nav-lin" class="linkedin w-full pt-[0.15rem]">
+                    <p class="font-medium text-[#9f9f9f] text-lg">LinkedIn</p>
+                </div>
+                <div id="nav-git" class="github w-full pt-[0.15rem]">
+                    <p class="font-medium text-[#9f9f9f] text-lg">Github</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- spaces -->
+    <div class="space py-10"></div>
+
+    <!-- Main Title -->
+    <section class="flex flex-col w-screen h-auto py-24 justify-center items-center">
+        <!-- Elements Container -->
+        <div class="main-body w-full md:w-[725px] h-auto px-8 md:px-20 flex-col justify-start items-center">
+            <!-- Title -->
+            <div class="title flex flex-col justify-center items-center w-fit h-auto mb-5">
+                <h1 class="text-white text-center font-semibold text-3xl lg:text-5xl">Software engineer by the day 🌞
+                    software addict by the night 🌚</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Main Title -->
+
+    <!-- Photos -->
+    <section class="flex w-screen h-auto justify-center items-center">
+        <!-- Photos Container -->
+        <div class="main-body w-full md:w-[760px] h-auto px-8 md:px-20 flex flex-row justify-center items-center">
+            <!-- Photos -->
+            <div
+                class="photo1 hidden md:block w-72 h-[23rem] rounded-lg hover:scale-[110%] bg-white transition ease-in-out overflow-hidden mr-5">
+                <img class="w-full h-full" src="assets/Rectangle 58.png" alt="pic">
+            </div>
+            <div
+                class="photo2 w-60 sm:w-72 md:w-80 md:h-[26rem] rounded-lg hover:scale-[105%] bg-white transition ease-in-out overflow-hidden">
+                <img class="h-fit w-fit" src="assets/Keenan.JPEG" alt="pic">
+            </div>
+        </div>
+    </section>
+    <!-- Photos -->
+
+    <!-- About -->
+    <section class="flex w-screen h-auto justify-center items-center py-9">
+        <!-- About Container -->
+        <div class="main-body w-full md:w-[725px] h-auto px-5 md:ps-5 lg:ps-16 flex-col justify-start items-center">
+            <!-- Texts -->
+            <div class="self-details flex flex-col justify-start items-start w-fit h-auto mb-8">
+                <p class="text-[#d4d4d4] font-normal text-lg">Hey, Welcome aboard. Nice to meet you!
+                    <br>
+                    <br>
+                    My name is Muhammad Keenan Abigail, a Software Engineer based out of Jakarta. I'm now part of <span
+                        class="text-[#968fff]">DigiTeam</span> as
+                    a developer and project manager in various client projects.
+                    <br>
+                    <br>
+                    i love to code, In addition to coding i also love to create contents that is beneficial for people
+                    in the span of the coding community.
+                    <br>
+                    <br>
+                    If i'm not with my devices, I am probably doing sports, socializing with my friends and loved
+                    ones or maybe at a local coffee shop :]
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- Social Medias -->
+    <section class="flex w-screen h-auto justify-center items-center py-6">
+        <!-- Social Medias Container -->
+        <div class="main-body w-full md:w-[725px] h-auto flex flex-col md:flex-row justify-center items-center">
+            <!-- Left -->
+            <div class="w-full md:w-1/2 h-auto flex flex-col justify-end items-end px-4 md:pe-6">
+                <!-- Email -->
+                <div id="nav-mail"
+                    class="w-full md:w-auto h-auto md:px-20 py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                        <path
+                            d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16l-8 5-8-5zm0 12V8.437l7.385 4.615c.197.123.416.184.615.184s.418-.061.615-.184L20 8.437V18H4z" />
+                    </svg>
+                    <p class="text-white font-normal text-sm ms-2">Partnerships</p>
+                </div>
+                <!-- Github -->
+                <div id="nav-git"
+                    class="w-full md:w-auto h-auto md:px-[6.3rem] py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.76-1.605-2.665-.305-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.125-.303-.535-1.527.115-3.18 0 0 1.005-.322 3.3 1.23.955-.265 1.98-.398 3-.403 1.02.005 2.045.138 3 .403 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.245 2.877.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.815 1.096.815 2.21 0 1.595-.015 2.875-.015 3.265 0 .32.215.695.825.577C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                    <p class="text-white font-normal text-sm ms-2">Github</p>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="w-full md:w-1/2 h-auto flex flex-col justify-start items-start px-4 md:ps-6">
+                <!-- Twitter -->
+                <div id="nav-x"
+                    class="w-full md:w-auto h-auto md:px-[6.1rem] py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" v iewBox="0 0 24 24" width="24" height="24" fill="white">
+                        <path
+                            d="M23.954 4.569c-.885.39-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.952-2.173-1.548-3.59-1.548-2.717 0-4.92 2.203-4.92 4.917 0 .39.043.765.127 1.124-4.09-.205-7.719-2.165-10.148-5.144-.422.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.697 4.374 3.946 4.828-.413.112-.848.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.376 4.6 3.414-1.68 1.319-3.809 2.104-6.104 2.104-.395 0-.79-.023-1.175-.067 2.188 1.396 4.768 2.212 7.557 2.212 9.054 0 14.009-7.496 14.009-13.986 0-.209-.004-.42-.013-.63.961-.695 1.797-1.56 2.457-2.548l-.047-.02z" />
+                    </svg>
+                    <p class="text-white font-normal text-sm ms-2">Twitter</p>
+                </div>
+                <!-- LinkedIn -->
+                <div id="nav-lin"
+                    class="w-full md:w-auto h-auto md:px-[5.8rem] py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                        <path
+                            d="M19 0h-14c-2.75 0-5 2.25-5 5v14c0 2.75 2.25 5 5 5h14c2.75 0 5-2.25 5-5v-14c0-2.75-2.25-5-5-5zm-11.535 20.535h-3.022v-9.856h3.022v9.856zm-1.511-11.158c-.968 0-1.622-.707-1.622-1.584 0-.893.668-1.584 1.652-1.584.984 0 1.622.691 1.633 1.584 0 .877-.648 1.584-1.648 1.584-.001 0-.001 0-.015 0zm13.559 11.158h-3.022v-4.75c0-1.193-.422-2.007-1.475-2.007-.804 0-1.284.541-1.495 1.065-.077.188-.096.451-.096.715v4.977h-3.022v-9.856h3.022v1.347c.401-.622 1.104-1.505 2.682-1.505 1.959 0 3.427 1.276 3.427 4.016v5.997z" />
+                    </svg>
+                    <p class="text-white font-normal text-sm ms-2">LinkedIn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Social Medias -->
+
+    <!-- Work -->
+    <!-- Work -->
+
+    <!-- Footer -->
+    <section class="flex flex-col w-screen h-auto py-20 justify-center items-center">
+        <!-- Container -->
+        <div class="container-footer w-full h-auto px-5 flex flex-col justify-center items-center">
+            <!-- Text Works -->
+            <div class="container-work w-full h-auto py-2 flex justify-center items-center mb-20">
+                <p class="text-[#968fff] font-bold text-2xl md:text-3xl">Lets get productive ━ Hit me up!</p>
+            </div>
+            <!-- Footer Copyright -->
+            <div class="container-foot w-full h-auto flex flex-col-reverse md:flex-row justify-center items-center">
+                <div class="copyright flex w-full h-auto justify-center items-center">
+                    <p class="text-white font-normal text-lg">© June 2024, Keenan Abigail</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+
+    <script src="main.js"></script>
+    <script>
+        // home
+        document.getElementById('home').addEventListener('click', function () {
+            window.location.href = 'index.html'
+        });
+        // Twitter
+        document.getElementById('nav-x').addEventListener('click', function () {
+            window.open('https://x.com/kennbigail', '_blank')
+        });
+
+        // Github
+        document.getElementById('nav-git').addEventListener('click', function () {
+            window.open('https://github.com/kenbigail', '_blank')
+        });
+
+        // LinkedIn
+        document.getElementById('nav-lin').addEventListener('click', function () {
+            window.open('https://www.linkedin.com/in/keenanabigail/', '_blank')
+        });
+
+        // Instagram
+        document.getElementById('nav-insta').addEventListener('click', function () {
+            window.open('https://www.instagram.com/kabigails_', '_blank')
+        });
+
+        // Resume
+        document.getElementById('nav-res').addEventListener('click', function () {
+            window.open('https://drive.google.com/file/d/199k1dEGeGtqMw_DSMEBdG1hFBHjp3nWe/view?usp=sharing',
+                '_blank')
+        });
+
+        // CV
+        document.getElementById('nav-cv').addEventListener('click', function () {
+            window.open('https://read.cv/kenbigail', '_blank')
+        });
+
+        // email
+        document.getElementById('nav-mail').addEventListener('click', function () {
+            window.open('https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=keenanabigailidn@gmail.com', '_blank')
+        });
+
+        // Booking
+        document.getElementById('nav-cal').addEventListener('click', function () {
+            window.open('https://cal.com/kenbigail/meeting-request', '_blank')
+        });
+    </script>
+</body>
+
+</html>
