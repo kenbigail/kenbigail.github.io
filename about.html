@@ -50,7 +50,7 @@
                         <a href="#" class="text-[#9f9f9f] px-3 py-2 rounded-md text-sm font-medium">about</a>
                         <a href="#" id="nav-res"
                             class="text-[#9f9f9f] text-opacity-[40%] hover:text-opacity-[100%] px-3 py-2 rounded-md text-sm font-medium">resume</a>
-                        <a href="#" id="nav-cal"
+                        <a href="#" id="nav-calendar"
                             class="text-[#968fff] text-opacity-[100%] hover:text-opacity-[80%] px-3 py-2 rounded-md text-sm font-semibold">reserve</a>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     <p class="text-white font-normal text-sm ms-2">Partnerships</p>
                 </div>
                 <!-- Github -->
-                <div id="nav-git"
+                <div id="nav-hub"
                     class="w-full md:w-auto h-auto md:px-[6.3rem] py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
                         <path
@@ -197,7 +197,7 @@
             <!-- Right -->
             <div class="w-full md:w-1/2 h-auto flex flex-col justify-start items-start px-4 md:ps-6">
                 <!-- Twitter -->
-                <div id="nav-x"
+                <div id="nav-twit"
                     class="w-full md:w-auto h-auto md:px-[6.1rem] py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" v iewBox="0 0 24 24" width="24" height="24" fill="white">
                         <path
@@ -206,7 +206,7 @@
                     <p class="text-white font-normal text-sm ms-2">Twitter</p>
                 </div>
                 <!-- LinkedIn -->
-                <div id="nav-lin"
+                <div id="nav-din"
                     class="w-full md:w-auto h-auto md:px-[5.8rem] py-4 bg-[#191919] bg-opacity-[60%] hover:bg-opacity-[100%] transition-all flex justify-center items-center rounded-lg mb-4 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
                         <path
@@ -242,22 +242,18 @@
 
     <script src="main.js"></script>
     <script>
-        // home
-        document.getElementById('home').addEventListener('click', function () {
-            window.location.href = 'index.html'
-        });
         // Twitter
-        document.getElementById('nav-x').addEventListener('click', function () {
+        document.getElementById('nav-twit').addEventListener('click', function () {
             window.open('https://x.com/kennbigail', '_blank')
         });
 
         // Github
-        document.getElementById('nav-git').addEventListener('click', function () {
+        document.getElementById('nav-hub').addEventListener('click', function () {
             window.open('https://github.com/kenbigail', '_blank')
         });
 
         // LinkedIn
-        document.getElementById('nav-lin').addEventListener('click', function () {
+        document.getElementById('nav-din').addEventListener('click', function () {
             window.open('https://www.linkedin.com/in/keenanabigail/', '_blank')
         });
 
@@ -272,18 +268,13 @@
                 '_blank')
         });
 
-        // CV
-        document.getElementById('nav-cv').addEventListener('click', function () {
-            window.open('https://read.cv/kenbigail', '_blank')
-        });
-
         // email
         document.getElementById('nav-mail').addEventListener('click', function () {
             window.open('https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=keenanabigailidn@gmail.com', '_blank')
         });
 
         // Booking
-        document.getElementById('nav-cal').addEventListener('click', function () {
+        document.getElementById('nav-calendar').addEventListener('click', function () {
             window.open('https://cal.com/kenbigail/meeting-request', '_blank')
         });
     </script>
